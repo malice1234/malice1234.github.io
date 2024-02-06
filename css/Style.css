@@ -10,12 +10,23 @@ header{
 
 div{
     background-color: gainsboro;
-    box-align:center;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex div{
+    width: 33%;
     
 }
-/* .flex-container {
-    display: flex;
-    
+
+/* .flex > div#img{
+    min-height: auto;
+} */
+
+/* .meteoVille{
+    text-align : center;
 } */
 
 footer{
