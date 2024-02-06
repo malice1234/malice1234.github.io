@@ -6,10 +6,18 @@ header{
     text-align:center;
   }
 
+
+
 div{
     background-color: gainsboro;
+    box-align:center;
+    
 }
+/* .flex-container {
+    display: flex;
+    
+} */
 
 footer{
-    background-color: gainsboro;
+    background-color: lightgrey;
 }
