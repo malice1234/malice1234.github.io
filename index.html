@@ -6,26 +6,26 @@
     <script>
         function afficheVille() 
         {
-        // 1. Récupération de la valeur courante du select avec son id
-        let nomVilleChoisie = document.getElementById("SelectVille").value;
-        // 2. Récupération de la liste de toutes les div correspondant à une div de météo
-        // grâce à la classe « ville »
-        let villes = document.querySelectorAll(".meteoVille");
-        // 3. Parcours de la liste des div météo. On cache celles non sélectionnées.
-        villes.forEach(function(ville)
-        {
-        // l’attribut id de l’élément est comparée à la ville choisie
-        if (villes[i].id == nomVilleChoisie) 
+            // 1. Récupération de la valeur courante du select avec son id
+            let nomVilleChoisie = document.getElementById("SelectVille").value;
+            // 2. Récupération de la liste de toutes les div correspondant à une div de météo
+            // grâce à la classe « ville »
+            let villes = document.querySelectorAll(".meteoVille");
+            // 3. Parcours de la liste des div météo. On cache celles non sélectionnées.
+            villes.forEach(function(ville)
             {
-            // garder l'élément visible -> ELEMENT.style.display= "";
-                ville.style.display="block";
-            } 
-        else 
-            {
-            // cacher l'élément -> ELEMENT.style.display= "none";
-                ville.style.display = "none"
-            }
-        });
+                // l’attribut id de l’élément est comparée à la ville choisie
+                if (villes[i].id == nomVilleChoisie) 
+                    {
+                    // garder l'élément visible -> ELEMENT.style.display= "";
+                        ville.style.display="block";
+                    } 
+                else 
+                    {
+                    // cacher l'élément -> ELEMENT.style.display= "none";
+                        ville.style.display = "none"
+                    }
+            });
         }
     </script>
 
@@ -52,7 +52,7 @@
             <img src="./img/pluvieux.png" width="5%"/>
         </div>
 
-        <div class="meteoVille"  id="Rio de Janeiro">
+        <div class="meteoVille"  id="Rio_de_Janeiro">
             <h2>Rio de Janeiro</h2>
             <p>29°, orageux</p>
             <img src="./img/orageux.png" width="5%"/>
