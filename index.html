@@ -10,21 +10,17 @@
             let nomVilleChoisie = document.getElementById("SelectVille").value;
             // 2. Récupération de la liste de toutes les div correspondant à une div de météo
             // grâce à la classe « ville »
-            let villes = document.querySelectorAll(".meteoVille");
+            let villes = document.getElementsByClassName("meteoVille");
             // 3. Parcours de la liste des div météo. On cache celles non sélectionnées.
-            villes.forEach(function(ville)
-            {
+            villes.forEach(function(ville) {
                 // l’attribut id de l’élément est comparée à la ville choisie
-                if (villes[i].id == nomVilleChoisie) 
-                    {
+                if (ville.id === nomVilleChoisie) {
                     // garder l'élément visible -> ELEMENT.style.display= "";
-                        ville.style.display="block";
-                    } 
-                else 
-                    {
+                    ville.style.display = "block";
+                } else {
                     // cacher l'élément -> ELEMENT.style.display= "none";
-                        ville.style.display = "none"
-                    }
+                    ville.style.display = "none";
+                }
             });
         }
     </script>
