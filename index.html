@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- <script>
+    <script>
         function afficheVille() 
         {
         // 1. Récupération de la valeur courante du select avec son id
-        let nomVilleChoisie = …
+        let nomVilleChoisie = document.getElementById("SelectVille").value;
         // 2. Récupération de la liste de toutes les div correspondant à une div de météo
         // grâce à la classe « ville »
-        let villes = …
+        let villes = document.querySelectorAl("meteoVille");
         // 3. Parcours de la liste des div météo. On cache celles non sélectionnées.
-        for (i=0; i<…; i++) 
+        villes.forEach(function(ville)
         {
         // l’attribut id de l’élément est comparée à la ville choisie
         if (villes[i].id == nomVilleChoisie) 
-        {
-        // garder l'élément visible -> ELEMENT.style.display= "";
-        …
-        } else 
-        {
-        // cacher l'élément -> ELEMENT.style.display= "none";
-        …
+            {
+            // garder l'élément visible -> ELEMENT.style.display= "";
+                ville.style.display="block";
+            } 
+        else 
+            {
+            // cacher l'élément -> ELEMENT.style.display= "none";
+                ville.style.display = "none"
+            }
+        });
         }
-        }
-        }
-    </script> -->
+    </script>
 
 </head>
 
