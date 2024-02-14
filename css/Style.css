@@ -12,12 +12,12 @@ div{
     background-color: gainsboro;
 }
 .flex{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 .flex div{
-    display: flex;
-    justify-content: space-evenly;
+    width: 33%;
     
 }
 
